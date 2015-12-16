@@ -11,7 +11,17 @@ Time spent: 5 hours spent in total
 The following **required** functionality is complete:
 
 * [Yes] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [Yes] Settings page to change the default tip percentage.
+* [NO] Settings page to change the default tip percentage.
+
+TODO: ( After exams :) ) 
+1. Create a GIF walkthrough 
+2. Complete the SettingsViewController work
+3. Remember the bill amount across app restarts. After an extended period of time, clear the state. This is a UI trick that Apple uses with the Spotlight app. If you return there a minute later, it will show your most recent search. if you return 10 minutes later, it defaults to blank. To implement this, plug into the application lifecycle and track time using NSDate.
+Use locale specific currency and currency thousands separator.
+4. Add a light/dark color theme to the settings view. In viewWillAppear, update views with the correct theme colors.
+5. Make sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+6. Add animations to your UI
+7. The Tip calculator has a very primitive UI. Feel free to play with colors, layout, or even modify the UI to improve it.
 
 The following **optional** features are implemented:
 * [ ] UI animations
