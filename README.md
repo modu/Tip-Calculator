@@ -15,21 +15,23 @@ The following **required** functionality is complete:
 
 TODO: 
 1. Add animations to your UI
+
 2. The Tip calculator has a very primitive UI. Feel free to play with colors, layout, or even modify the UI to improve it.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
+
 <img src='http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc
+
 http://imgur.com/42Z6HoE
 
-![image Video WalkThrough](http://imgur.com/42Z6HoE)
+<!--![image Video WalkThrough](http://imgur.com/42Z6HoE)-->
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+Challenges
 Not able to make static UItableView in UITableController while making setting page. 
 
 ## License
