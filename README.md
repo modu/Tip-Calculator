@@ -22,7 +22,7 @@ TODO:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!--<img src='http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc' title='Video Walkthrough' width='' alt='Video Walkthrough' />-->
 
 http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc
 
