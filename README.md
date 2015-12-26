@@ -13,7 +13,7 @@ The following **required** functionality is complete:
 * [Yes] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 * [Yes] Settings page to change the default tip percentage.
 
-TODO: ( After exams :) ) 
+TODO: 
 1. Add animations to your UI
 2. The Tip calculator has a very primitive UI. Feel free to play with colors, layout, or even modify the UI to improve it.
 
