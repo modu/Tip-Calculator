@@ -20,10 +20,13 @@ TODO:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
-TODO:
+
+Here's a walkthrough of implemented user stories:
 <img src='http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<!--http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc-->
+
+![image Video WalkThrough](http://imgur.com/42Z6HoE)
 
 ## Notes
 
