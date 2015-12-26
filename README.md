@@ -20,11 +20,10 @@ TODO:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
-
-Here's a walkthrough of implemented user stories:
 <img src='http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!--http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc-->
+http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc
+http://imgur.com/42Z6HoE
 
 ![image Video WalkThrough](http://imgur.com/42Z6HoE)
 
