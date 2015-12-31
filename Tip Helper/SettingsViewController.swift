@@ -14,12 +14,15 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var themeSegment: UISegmentedControl!
     
+    @IBOutlet weak var currencySegment: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = NSUserDefaults.standardUserDefaults()
         defaultTip.text = String( format: "%.0f" ,defaults.doubleForKey("default_tip_percentage") )
         
         themeLoading()
+        currencyLoading()
         // Do any additional setup after loading the view.
     }
 
@@ -55,6 +58,26 @@ class SettingsViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func currencySegmentOnChange(sender: AnyObject) {
+        let number = currencySegment.selectedSegmentIndex
+        print("Value of number in currency  " + String(number))
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if(number == 0 ){
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setDouble(0, forKey: "currency")
+        }
+        else if (number == 1) {
+            defaults.setDouble(1, forKey: "currency")
+        }
+        else if (number == 2) {
+            defaults.setDouble(2, forKey: "currency")
+        }
+        else if (number == 3) {
+            defaults.setDouble(3, forKey: "currency")
+        }
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -73,5 +96,24 @@ class SettingsViewController: UIViewController {
             themeSegment.selectedSegmentIndex = 1
         }
 
+    }
+    func currencyLoading() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let localCurrency = defaults.doubleForKey("currency")
+        if(localCurrency == 0)
+        {
+            currencySegment.selectedSegmentIndex = 0
+        }
+        else if(localCurrency==1){
+            currencySegment.selectedSegmentIndex = 1
+        }
+        else if(localCurrency==2){
+            currencySegment.selectedSegmentIndex = 2
+        }
+        else if(localCurrency==3){
+            currencySegment.selectedSegmentIndex = 3
+        }
+        
+        
     }
 }

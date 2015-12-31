@@ -20,36 +20,42 @@ class ViewController: UIViewController {
     
     var defaultTipValue :Double = 0
     
+    var currencyValue :String = "$";
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         billField.becomeFirstResponder()
-
+        
         // Do any additional setup after loading the view, typically from a nib.
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
+        tipLabel.text = currencyValue + "0.00"
+        totalLabel.text = currencyValue + "0.00"
         let defaults = NSUserDefaults.standardUserDefaults()
         defaultTipValue = defaults.doubleForKey("default_tip_percentage")
-        print("Value of DefaultTypeValue is " + String(format: "%.2f",defaultTipValue) )
+        print("Value of DefaultTypeValue is " + String(format: currencyValue+"%.2f",defaultTipValue) )
+        tipControl.selectedSegmentIndex = 0
+
         themeLoading()
+        currencyLoading()
         
     }
     @IBAction func onEditingChanged(sender: AnyObject) {
-                if(defaultTipValue == 0 ){
-        var tipArray =  [0.10 , 0.20 , 0.25]
-        let tipValueChoosen = tipArray[tipControl.selectedSegmentIndex]
-        let billAmount = NSString(string: billField.text!).doubleValue
-        let tip = billAmount * tipValueChoosen
-        let total = billAmount + tip
-        tipLabel.text = String(format: "$"+"%.2f", tip )
-        totalLabel.text = String(format: "$%.2f", total )
-                }
-                else {
-                    let billAmount = NSString(string: billField.text!).doubleValue
-                    let tip = billAmount * defaultTipValue * 0.01
-                    let total = billAmount + tip
-                    tipLabel.text = String(format: "$%.2f", tip )
-                    totalLabel.text = String(format: "$%.2f", total )
-                }
+        if(defaultTipValue == 0 ){
+            var tipArray =  [0.10 , 0.20 , 0.25]
+            let tipValueChoosen = tipArray[tipControl.selectedSegmentIndex]
+            let billAmount = NSString(string: billField.text!).doubleValue
+            let tip = billAmount * tipValueChoosen
+            let total = billAmount + tip
+            tipLabel.text = String(format: currencyValue+"%.2f", tip )
+            totalLabel.text = String(format: currencyValue+"%.2f", total )
+        }
+        else {
+            //tipControl.selectedSegmentIndex = -1
+            let billAmount = NSString(string: billField.text!).doubleValue
+            let tip = billAmount * defaultTipValue * 0.01
+            let total = billAmount + tip
+            tipLabel.text = String(format: currencyValue+"%.2f", tip )
+            totalLabel.text = String(format: currencyValue+"%.2f", total )
+        }
     }
     @IBAction func onEditingChangedRotator(sender: AnyObject) {
         var tipArray =  [0.10 , 0.20 , 0.25]
@@ -57,8 +63,8 @@ class ViewController: UIViewController {
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * tipValueChoosen
         let total = billAmount + tip
-        tipLabel.text = String(format: "$"+"%.2f", tip )
-        totalLabel.text = String(format: "$%.2f", total )
+        tipLabel.text = String(format: currencyValue+"%.2f", tip )
+        totalLabel.text = String(format: currencyValue+"%.2f", total )
     }
     
     @IBAction func ontap(sender: AnyObject) {
@@ -75,14 +81,14 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("view will appear")
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaultTipValue = defaults.doubleForKey("default_tip_percentage")
+        currencyLoading()
         print("Value of DefaultTypeValue is in ViewWIllappear" + String(format: "%.2f",defaultTipValue) )
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * defaultTipValue * 0.01
         let total = billAmount + tip
-        tipLabel.text = String(format: "$%.2f", tip )
-        totalLabel.text = String(format: "$%.2f", total )
-        tipControl.selectedSegmentIndex = -1
+        tipLabel.text = String(format: currencyValue+"%.2f", tip )
+        totalLabel.text = String(format: currencyValue+"%.2f", total )
+        //tipControl.selectedSegmentIndex = -1
         // This is a good place to retrieve the default tip percentage from NSUserDefaults
         // and use it to update the tip amount
         
@@ -124,6 +130,23 @@ class ViewController: UIViewController {
         }
         
     }
-    
+    func currencyLoading() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let localcurrency = defaults.doubleForKey("currency")
+        if(localcurrency == 0) {
+            currencyValue = "$"
+        }
+        else if(localcurrency==1){
+            currencyValue = "€"
+        }
+        else if(localcurrency==2){
+            currencyValue = "£"
+        }
+        else if(localcurrency==3){
+            currencyValue = "₹"
+        }
+        
+    }
+
 }
 

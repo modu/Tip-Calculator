@@ -11,8 +11,8 @@
 		B589E5D11C20BC070001DD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589E5D01C20BC070001DD77 /* AppDelegate.swift */; };
 		B589E5D31C20BC070001DD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589E5D21C20BC070001DD77 /* ViewController.swift */; };
 		B589E5D61C20BC070001DD77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B589E5D41C20BC070001DD77 /* Main.storyboard */; };
-		B589E5D81C20BC070001DD77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B589E5D71C20BC070001DD77 /* Assets.xcassets */; };
 		B589E5DB1C20BC070001DD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B589E5D91C20BC070001DD77 /* LaunchScreen.storyboard */; };
+		B5D201B31C35BA2A0047D765 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D201B21C35BA2A0047D765 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		B589E5D01C20BC070001DD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B589E5D21C20BC070001DD77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B589E5D51C20BC070001DD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B589E5D71C20BC070001DD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B589E5DA1C20BC070001DD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B589E5DC1C20BC070001DD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D201B21C35BA2A0047D765 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 				B589E5D21C20BC070001DD77 /* ViewController.swift */,
 				B589E5D41C20BC070001DD77 /* Main.storyboard */,
 				B54ACBDE1C2C40C000716EEA /* SettingsViewController.swift */,
-				B589E5D71C20BC070001DD77 /* Assets.xcassets */,
 				B589E5D91C20BC070001DD77 /* LaunchScreen.storyboard */,
 				B589E5DC1C20BC070001DD77 /* Info.plist */,
+				B5D201B21C35BA2A0047D765 /* Images.xcassets */,
 			);
 			path = "Tip Helper";
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D201B31C35BA2A0047D765 /* Images.xcassets in Resources */,
 				B589E5DB1C20BC070001DD77 /* LaunchScreen.storyboard in Resources */,
-				B589E5D81C20BC070001DD77 /* Assets.xcassets in Resources */,
 				B589E5D61C20BC070001DD77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Helper/Info.plist";
@@ -267,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Helper/Info.plist";
