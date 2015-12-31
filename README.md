@@ -4,7 +4,7 @@ Tip Helper is a tip calculator application for iOS.
 
 Submitted by: Varun Vyas
 
-Time spent: 9 hours spent in total
+Time spent: 11 hours spent in total
 
 ## User Stories
 
@@ -27,6 +27,10 @@ Here's a walkthrough of implemented user stories:
 http://giphy.com/gifs/ios-prework-26tPpU64WuQ5WsfQc
 
 http://imgur.com/42Z6HoE
+
+updated with icon and currency 
+
+http://giphy.com/gifs/3o6LXrg9aO4xv4FTMI
 
 <!--![image Video WalkThrough](http://imgur.com/42Z6HoE)-->
 
